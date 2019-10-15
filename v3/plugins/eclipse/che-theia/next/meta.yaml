@@ -48,7 +48,7 @@ spec:
         discoverable: false
   initContainers:
   - name: remote-runtime-injector
-    image: docker.io/tnemov/che-theia-endpoint-runtime-binary:next
+    image: docker.io/tnemov/che-theia-endpoint-runtime-binary:next1
     volumes:
       - mountPath: "/remote-endpoint"
         name: remote-endpoint
