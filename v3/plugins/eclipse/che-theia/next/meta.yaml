@@ -48,7 +48,7 @@ spec:
         discoverable: false
   initContainers:
   - name: remote-runtime-injector
-    image: docker.io/tnemov/che-theia-endpoint-runtime-binary:next3
+    image: docker.io/eclipse/che-theia-endpoint-runtime-binary:next
     volumes:
       - mountPath: "/remote-endpoint"
         name: remote-endpoint
@@ -60,7 +60,7 @@ spec:
         value: remote-endpoint
   containers:
    - name: theia-ide
-     image: docker.io/tnemov/theia-rhel8:next    
+     image: docker.io/eclipse/che-theia:next    
      env:
          - name: THEIA_PLUGINS
            value: local-dir:///plugins
